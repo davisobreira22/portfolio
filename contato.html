@@ -13,7 +13,7 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="style.css">
 
-      <title>Contact - Responsive portfolio website - Bedimcode</title>
+      <title>Contato | Glauce</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -60,20 +60,48 @@
       <main class="main">
          <!--==================== CONTACT ====================-->
          <section class="contact section">
-            
+                <h2 class="section__title">
+                    Vamos falar sobre seu evento
+                </h2>
+
+                <div class="contact__page container grid">
+                    <form action="" class="contact__form grid" id="contact-form">
+                        <div class="contact__group grid">
+                            <div class="contact__box">
+                                <input type="text" name="user_name" id="name" required placeholder="Escreva seu nome" class="contact__input">
+                                <label for="name" class="contact__label">Nome</label>
+                            </div>
+
+                            <div class="contact__box">
+                                <input type="email" name="user_email" id="email" required placeholder="Escreva seu email" class="contact__input">
+                                <label for="email" class="contact__label">email</label>
+                            </div>
+
+                        </div>
+                        
+                        <div class="contact__box contact__area">
+                            <textarea name="user_message" id="message" required placeholder="Escreva sua mensagem" class="contact__input"></textarea>
+                            <label for="message" class="contact__label">Mensagem</label>
+                        </div>
+
+                        <p class="contact__message" id="contact__message"></p>
+
+                        <button type="submit" class="contact__send button">Enviar Mensagem</button>
+                    </form>
+                </div>
+
          </section>
       </main>
 
       <!--==================== FOOTER ====================-->
       
-
       <!--=============== MAIN JS ===============-->
       <script src="main.js"></script>
       
       <!--=============== EMAIL JS ===============-->
-      
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
       
       <!--=============== CONTACT JS ===============-->
-      <script src="assets/js/contact.js"></script>
+      <script src="contato.js"></script>
    </body>
 </html>

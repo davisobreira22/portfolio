@@ -13,12 +13,13 @@
       <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'> 
 
       <!--=============== SWIPER CSS ===============-->
-     
-
+ 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="style.css">
 
-      <title>Bem-Vindo</title>
+      <title>Página Inicial | Glauce</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -363,17 +364,107 @@
 
          <!--==================== WORK ====================-->
          <section class="work section">
-            
+            <h2 class="section__title">Meus trabalhos mais recentes</h2>
+
+            <div class="work__container work__page container grid">
+                <article class="work__card">
+                    <a href="#" class="work__link">
+                        <img src="congresso.jpg" alt="image" class="work__image">
+                        <i class="ri-arrow-right-line work__icon"></i>
+                    </a>
+
+                    <h2 class="work__title">II Congresso Nacional da Magistratura do Trabalho </h2>
+                    <span class="work__subtitle">Debate sobre os crimes cibernéticos e reforma da previdência</span>
+                </article>
+
+                <article class="work__card">
+                    <a href="#" class="work__link">
+                        <img src="teatro.jpg" alt="image" class="work__image">
+                        <i class="ri-arrow-right-line work__icon"></i>
+                    </a>
+
+                    <h2 class="work__title">Espetáculo Estrela Guia - Um Conto de Natal</h2>
+                    <span class="work__subtitle">Tradução e interpretação de um teatro com o tema natalino</span>
+                </article>
+
+                <article class="work__card">
+                    <a href="#" class="work__link">
+                        <img src="pestolazi.jpeg" alt="image" class="work__image">
+                        <i class="ri-arrow-right-line work__icon"></i>
+                    </a>
+
+                    <h2 class="work__title">XVI Congresso Nacional das Associações Pestalozzi</h2>
+                    <span class="work__subtitle">Discussão sobre o atendimento e inclusão de pessoas especiais</span>
+                </article>
+
+ 
+    
+            </div>  
          </section>
 
          <!--==================== TESTIMONIAL ====================-->
          <section class="testimonial section">
-            
+            <h2 class="section__title">O que estão dizendo sobre mim?</h2>
+
+            <div class="testimonial__container container">
+                <div class="testimonial__swiper swiper">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <article class="testimonial__card swiper-slide">
+                                <div class="testimonial__border">
+                                    <img src="cristiano.jpg" alt="image" class="testimonial__img">
+                                </div>
+                                <h2 class="testimonial__name">Cristiano</h2>
+                                <p class="testimonial__description">Uma excelente Interprete!</p>
+                            </article>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <article class="testimonial__card swiper-slide">
+                                <div class="testimonial__border">
+                                    <img src="cristiano.jpg" alt="image" class="testimonial__img">
+                                </div>
+                                <h2 class="testimonial__name">Cristiano</h2>
+                                <p class="testimonial__description">Uma excelente Interprete!</p>
+                            </article>
+                          </div>
+                          <div class="carousel-item">
+                            <article class="testimonial__card">
+                                <div class="testimonial__border">
+                                    <img src="cristiano.jpg" alt="image" class="testimonial__img">
+                                </div>
+                                <h2 class="testimonial__name">Cristiano</h2>
+                                <p class="testimonial__description">Uma excelente Interprete!</p>
+                            </article>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div> 
+            </div> 
          </section>
 
          <!--==================== CONTACT ====================-->
          <section class="contact section">
-            
+            <div class="contact__container container grid">
+                <h2 class="section__title">
+                    Vamos falar sobre seu evento
+                </h2>
+
+                <a href="contato.html" class="contact__button button">Entre em contato</a>
+            </div>
          </section>
       </main>
 
@@ -389,9 +480,9 @@
       <script src="main.js"></script>
 
       <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
+      
 
       <!--=============== INDEX JS ===============-->
-      <script src="assets/js/index.js"></script>
+      <!-- <script src="assets/js/index.js"></script> -->
    </body>
 </html>
